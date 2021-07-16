@@ -53,7 +53,6 @@ class ChipsInput<T> extends StatefulWidget {
     this.allowChipEditing = false,
     this.focusNode,
     this.initialSuggestions,
-	this.testInt,
   })  : assert(maxChips == null || initialValue.length <= maxChips),
         super(key: key);
 
@@ -80,7 +79,6 @@ class ChipsInput<T> extends StatefulWidget {
   final bool allowChipEditing;
   final FocusNode? focusNode;
   final List<T>? initialSuggestions;
-  final int testInt;
   // final Color cursorColor;
 
   final TextCapitalization textCapitalization;
